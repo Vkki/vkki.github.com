@@ -110,7 +110,7 @@ theme: modernist
 <p><img src="http://vkki.qiniudn.com/2014/2/4/4.jpg" alt=""></p>
 <p>看来这四幅图是一样的，于是随便选取一副，删掉其他的，保存为bg.jpg格式。</p>
 <p>接着将这幅图片放到hexo\themes\modernist\source\css\images下</p>
-<p>下面就是找css了，想到背景这种东西一般是在body标签里设置，于是打开css_base文件夹下的layout.styl看看，哈哈，果然在这里</p>
+<p>下面就是找css了，想到背景这种东西一般是在body标签里设置，于是打开css\_base文件夹下的layout.styl看看，哈哈，果然在这里</p>
 <p>找到</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
@@ -142,7 +142,7 @@ theme: modernist
 <p><img src="http://vkki.qiniudn.com/2014/2/4/7.jpg" alt=""></p>
 <p>F12看一下，是一个叫small的标签。</p>
 <p><img src="http://vkki.qiniudn.com/2014/2/4/8.jpg" alt=""></p>
-<p>打开hexo\themes\modernist\source\css_partial\sidebar.styl文件，可以看到small标签</p>
+<p>打开hexo\themes\modernist\source\css\_partial\sidebar.styl文件，可以看到small标签</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 3
@@ -201,8 +201,8 @@ theme: modernist
 <hr>
 <p>用同样的方法修改header部分
 <img src="http://vkki.qiniudn.com/2014/2/4/12.jpg" alt=""></p>
-<p>那行斜体字看着不顺眼，我们把斜体去掉，并把字体改为雅黑。</p>
-<p>打开hexo\themes\modernist\source\css_partial\header.styl，找到</p>
+<p>那行斜体字看着不顺眼，我们把斜体去掉。</p>
+<p>打开hexo\themes\modernist\source\css\_partial\header.styl，找到</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 3
@@ -222,7 +222,7 @@ theme: modernist
 <pre><code>font 13px &quot;Microsoft Yahei&quot;
 </code></pre><p>关于header的背景色怎么改想了很久，最后还是决定用木纹PSD上的那个笔记本好了，毕竟是一套比较搭。</p>
 <p>将PSD中header组合并后单独保存为header.jpg，并复制到与木纹文件相同的目录。</p>
-<p>打开hexo\themes\modernist\source\css_partial\header.styl，看到</p>
+<p>打开hexo\themes\modernist\source\css\_partial\header.styl，看到</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 3
@@ -257,6 +257,25 @@ theme: modernist
 
 
 <p><img src="http://vkki.qiniudn.com/2014/2/4/14.jpg" alt=""></p>
+<hr>
+<p>修改全局字体</p>
+<p>在hexo\themes\modernist\source\css\_base\variable.styl文件中，修改Font部分如下：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="comment">// Font</span>
+font<span class="attribute">-default</span> <span class="subst">=</span> <span class="string">"PT Serif"</span>, <span class="string">"Microsoft Yahei"</span>, <span class="string">"Helvetica Neue"</span>, <span class="string">"Helvetica"</span>, Arial, sans<span class="attribute">-serif</span>
+font<span class="attribute">-serif</span> <span class="subst">=</span> <span class="string">"PT Serif"</span>, <span class="string">"Georgia"</span>, serif
+font<span class="attribute">-mono</span> <span class="subst">=</span> Monaco, Menlo, Consolas, <span class="string">"Courier New"</span>, monospace
+font<span class="attribute">-title</span> <span class="subst">=</span> <span class="string">"PT Serif"</span>, <span class="string">"Microsoft Yahei"</span>, <span class="string">"Droid Serif"</span>, Helvetica Neue, Helvetica, Arial, sans<span class="attribute">-serif</span>
+@<span class="keyword">import</span> url(<span class="string">"http://fonts.googleapis.com/css?family=PT+Serif:400,400italic"</span>);
+</pre></td></tr></table></figure>
+
+
+<p>即可将英文字体设置为PT Serif，中文字体设置为微软雅黑。</p>
 
     
   </div>
