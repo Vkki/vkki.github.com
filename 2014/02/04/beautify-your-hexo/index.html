@@ -72,7 +72,7 @@ theme: modernist
   <header>
     
       <div class="icon"></div>
-      <time datetime="2014-02-04T11:12:50.000Z"><a href="/2014/02/04/beautify-your-hexo/">2月 4 2014</a></time>
+      <time datetime="2014-02-04T11:12:50.000Z"><a href="/2014/02/04/beautify-your-hexo/">Feb 4 2014</a></time>
     
     
   
@@ -300,6 +300,84 @@ font<span class="attribute">-title</span> <span class="subst">=</span> <span cla
 <pre><code>background url(images/paper.png)
 </code></pre><p>看效果</p>
 <p><img src="http://vkki.qiniudn.com/2014/2/4/17.jpg" alt=""></p>
+<p>发现超链接的蓝色与这个主题不太搭，继续改</p>
+<p>在hexo\themes\modernist\source\css\_base\variable.styl中找到</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="comment">// Color</span>
+<span class="keyword">color</span>-background = <span class="preprocessor">#fff</span>
+<span class="keyword">color</span>-font = <span class="preprocessor">#555</span>
+<span class="keyword">color</span>-link = <span class="preprocessor">#069</span>
+<span class="keyword">color</span>-strong = <span class="preprocessor">#222</span>
+</pre></td></tr></table></figure>
+
+
+<p>将color-link修改为#a00</p>
+<p>打开hexo\themes\modernist\source\css\_partial\article.styl，找到</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+</pre></td><td class="code"><pre>  <span class="tag">header</span>
+    <span class="attribute">border-radius</span> 0
+    <span class="attribute">background</span> <span class="attribute">none</span>
+    <span class="attribute">position</span> <span class="value">relative</span>
+    <span class="attribute">padding</span> 0
+    <span class="attribute">border-bottom</span> 0
+    <span class="attribute">margin-bottom</span> 10px
+
+    <span class="class">.icon</span>
+      <span class="attribute">width</span> <span class="attribute">icon</span>-container-size
+      <span class="attribute">height</span> <span class="attribute">icon</span>-container-size
+      <span class="attribute">position</span> <span class="value">absolute</span>
+      <span class="attribute">top</span> 0px
+      <span class="attribute">left</span> 0px
+      <span class="attribute">margin-left</span> -46px
+      <span class="attribute">color</span> <span class="id">#FFFFFF</span>
+      <span class="attribute">background</span> <span class="id">#b00</span>    <span class="comment">//修改此处</span>
+      <span class="attribute">border-radius</span> 100em
+      <span class="attribute">box-shadow</span> 0 0 4px <span class="function">rgba(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.4</span>)</span>  <span class="comment">//不喜欢阴影可删掉这行</span>
+      <span class="at_rule">@<span class="keyword">media</span><span class="preprocessor"> screen</span><span class="preprocessor"> and</span> (max-width:<span class="preprocessor"> 600px</span>)
+       <span class="preprocessor"> display</span><span class="preprocessor"> none</span>
+      &amp;:before
+       <span class="preprocessor"> position</span><span class="preprocessor"> absolute</span>
+       <span class="preprocessor"> font</span><span class="preprocessor"> icon-size</span><span class="preprocessor"> font-icon</span>    
+       <span class="preprocessor"> top</span><span class="preprocessor"> 6px</span>
+       <span class="preprocessor"> left</span><span class="preprocessor"> 0</span> 
+       <span class="preprocessor"> width</span><span class="preprocessor"> icon-container-size</span>
+       <span class="preprocessor"> text-align</span><span class="preprocessor"> center</span></span>
+</pre></td></tr></table></figure>
+
+
+<p>至此，我们的美化工作就差不多了，与原来对比一下，还是好很多了嘛，哈哈</p>
+<p><img src="http://vkki.qiniudn.com/2014/2/4/18.jpg" alt=""></p>
 
     
   </div>
@@ -324,7 +402,7 @@ font<span class="attribute">-title</span> <span class="subst">=</span> <span cla
 
 
 <section id="comment">
-  <h1 class="title">留言</h1>
+  <h1 class="title">Comments</h1>
   <div class="ds-thread" data-title="美化你的Hexo站点">
   </div>
 </section>
@@ -339,7 +417,7 @@ font<span class="attribute">-title</span> <span class="subst">=</span> <span cla
       
 
 <div class="widget tag first">
-  <h3 class="title">分类</h3>
+  <h3 class="title">Categories</h3>
   <ul class="entry">
   
     <li><a href="/categories/前端/">前端</a><small>1</small></li>
@@ -354,7 +432,7 @@ font<span class="attribute">-title</span> <span class="subst">=</span> <span cla
       
 
 <div class="widget tag">
-  <h3 class="title">标签</h3>
+  <h3 class="title">Tags</h3>
   <ul class="entry">
   
     <li><a href="/tags/开始/">开始</a><small>1</small></li>
@@ -369,7 +447,7 @@ font<span class="attribute">-title</span> <span class="subst">=</span> <span cla
       
 
 <div class="widget tagcloud">
-  <h3 class="title">标签云</h3>
+  <h3 class="title">Tag Cloud</h3>
   <div class="entry">
     <a href="/tags/开始/" style="font-size: NaNpx;">开始</a><a href="/tags/美化/" style="font-size: NaNpx;">美化</a>
   </div>
