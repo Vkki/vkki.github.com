@@ -101,6 +101,7 @@ theme: modernist
 <p>作为一名PSD，这样的主题自然是无法满足我的，下面我们就开始对其进行改造 ^_^</p>
 <a id="more"></a>
 
+<h1 id="-">更换背景</h1>
 <p>第一个要换的就是背景，原生的暗色太过压抑，我想换成亮一点的。</p>
 <p>去<a href="http://www.zcool.com.cn" title="站酷" target="_blank">站酷</a>搜索“木纹”，找到很多木纹背景，看上去还不错~</p>
 <p><img src="http://vkki.qiniudn.com/2014/2/4/2.jpg" alt="木纹背景" title="木纹背景"></p>
@@ -138,6 +139,7 @@ theme: modernist
 <p><img src="http://vkki.qiniudn.com/2014/2/4/6.jpg" alt=""></p>
 <p>这次比较不错。</p>
 <hr>
+<h1 id="-">更换文字颜色</h1>
 <p>下面就是一些细节性的问题了。要把这里的小字改成白色，不然看不清楚。</p>
 <p><img src="http://vkki.qiniudn.com/2014/2/4/7.jpg" alt=""></p>
 <p>F12看一下，是一个叫small的标签。</p>
@@ -199,8 +201,8 @@ theme: modernist
 <p>效果还不错</p>
 <p><img src="http://vkki.qiniudn.com/2014/2/4/10.jpg" alt=""></p>
 <hr>
-<p>用同样的方法修改header部分
-<img src="http://vkki.qiniudn.com/2014/2/4/12.jpg" alt=""></p>
+<h1 id="-header">修改header</h1>
+<p><img src="http://vkki.qiniudn.com/2014/2/4/12.jpg" alt=""></p>
 <p>那行斜体字看着不顺眼，我们把斜体去掉。</p>
 <p>打开hexo\themes\modernist\source\css\_partial\header.styl，找到</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
@@ -218,9 +220,8 @@ theme: modernist
 </pre></td></tr></table></figure>
 
 
-<p>删去最后两行，并添加</p>
-<pre><code>font 13px &quot;Microsoft Yahei&quot;
-</code></pre><p>关于header的背景色怎么改想了很久，最后还是决定用木纹PSD上的那个笔记本好了，毕竟是一套比较搭。</p>
+<p>删去最后一行即可。</p>
+<p>关于header的背景色怎么改想了很久，最后还是决定用木纹PSD上的那个笔记本好了，毕竟是一套比较搭。</p>
 <p>将PSD中header组合并后单独保存为header.jpg，并复制到与木纹文件相同的目录。</p>
 <p>打开hexo\themes\modernist\source\css\_partial\header.styl，看到</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
@@ -258,7 +259,7 @@ theme: modernist
 
 <p><img src="http://vkki.qiniudn.com/2014/2/4/14.jpg" alt=""></p>
 <hr>
-<p>修改全局字体</p>
+<h1 id="-">修改全局字体</h1>
 <p>在hexo\themes\modernist\source\css\_base\variable.styl文件中，修改Font部分如下：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
@@ -267,16 +268,37 @@ theme: modernist
 5
 6
 </pre></td><td class="code"><pre><span class="comment">// Font</span>
-font<span class="attribute">-default</span> <span class="subst">=</span> <span class="string">"PT Serif"</span>, <span class="string">"Microsoft Yahei"</span>, <span class="string">"Helvetica Neue"</span>, <span class="string">"Helvetica"</span>, Arial, sans<span class="attribute">-serif</span>
-font<span class="attribute">-serif</span> <span class="subst">=</span> <span class="string">"PT Serif"</span>, <span class="string">"Georgia"</span>, serif
-font<span class="attribute">-mono</span> <span class="subst">=</span> Monaco, Menlo, Consolas, <span class="string">"Courier New"</span>, monospace
-font<span class="attribute">-title</span> <span class="subst">=</span> <span class="string">"PT Serif"</span>, <span class="string">"Microsoft Yahei"</span>, <span class="string">"Droid Serif"</span>, Helvetica Neue, Helvetica, Arial, sans<span class="attribute">-serif</span>
+font<span class="attribute">-default</span> <span class="subst">=</span> <span class="string">"PT Serif"</span>, <span class="string">"Microsoft Yahei"</span>
+font<span class="attribute">-serif</span> <span class="subst">=</span> <span class="string">"PT Serif"</span>
+font<span class="attribute">-mono</span> <span class="subst">=</span> <span class="string">"PT Serif"</span>, <span class="string">"Microsoft Yahei"</span>
+font<span class="attribute">-title</span> <span class="subst">=</span> <span class="string">"PT Serif"</span>, <span class="string">"Microsoft Yahei"</span>
 @<span class="keyword">import</span> url(<span class="string">"http://fonts.googleapis.com/css?family=PT+Serif:400,400italic"</span>);
 </pre></td></tr></table></figure>
 
 
 <p>即可将英文字体设置为PT Serif，中文字体设置为微软雅黑。</p>
+<hr>
+<h1 id="-content-">修改content背景</h1>
+<p>还是那个PSD，在pad组里选取第一个page图层，其余的隐藏掉。</p>
+<p><img src="http://vkki.qiniudn.com/2014/2/4/15.jpg" alt=""></p>
+<p>用选取工具选取这样一块区域，注意边界只有左边和上边。</p>
+<p><img src="http://vkki.qiniudn.com/2014/2/4/16.jpg" alt=""></p>
+<p>反选后删除其余部分，裁切后保存为paper.png，保存至木纹那个目录下</p>
+<p>打开hexo\themes\modernist\source\css\_base\layout.styl</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="built_in">.</span>content
+  background linear<span class="attribute">-gradient</span>(<span class="variable">#fafafa</span>, <span class="variable">#DEDEDE</span> <span class="number">700</span>px)
+  border<span class="attribute">-radius</span> <span class="number">0</span> <span class="number">0</span> <span class="number">8</span>px <span class="number">8</span>px
+  border<span class="attribute">-top</span> <span class="number">1</span>px solid <span class="variable">#fff</span>
+</pre></td></tr></table></figure>
 
+
+<p>将第二行修改为</p>
+<pre><code>background url(images/paper.png)
+</code></pre>
     
   </div>
   <footer>
