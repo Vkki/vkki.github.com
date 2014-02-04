@@ -10,7 +10,19 @@
   <meta name="description" content="hexo总体来说还是非常方便好用的，尤其是提供了大量可自己定制的主题，这也是我选择它的一个很重要的原因。
 一开始我用的是modernist的主题。在hexo上更换主题很方便，只用一句git就可以解决：
 1
-git clone https://github.com/heroicyang/hexo-th">
+git clone https://github.com/heroicyang/hexo-theme-modernist.git themes/modernist
+
+
+
+
+下载完成后在hexo目录下_config.yml文件中设置一下就能看到效果了。
+1
+theme: modernist
+
+
+
+
+作为一名PSD，这样的主题自然是无法满足我的，下面我们就开始对其进行改造 ^_^">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -87,6 +99,8 @@ git clone https://github.com/heroicyang/hexo-th">
 
 <p><img src="http://vkki.qiniudn.com/2014/2/4/1.jpg" alt="modernist主题" title="modernist主题"></p>
 <p>作为一名PSD，这样的主题自然是无法满足我的，下面我们就开始对其进行改造 ^_^</p>
+<a id="more"></a>
+
 <p>第一个要换的就是背景，原生的暗色太过压抑，我想换成亮一点的。</p>
 <p>去<a href="http://www.zcool.com.cn" title="站酷" target="_blank">站酷</a>搜索“木纹”，找到很多木纹背景，看上去还不错~</p>
 <p><img src="http://vkki.qiniudn.com/2014/2/4/2.jpg" alt="木纹背景" title="木纹背景"></p>
@@ -128,7 +142,7 @@ git clone https://github.com/heroicyang/hexo-th">
 <p><img src="http://vkki.qiniudn.com/2014/2/4/7.jpg" alt=""></p>
 <p>F12看一下，是一个叫small的标签。</p>
 <p><img src="http://vkki.qiniudn.com/2014/2/4/8.jpg" alt=""></p>
-<p>打开hexo\themes\modernist\source\css_partial\下的sidebar.styl文件，可以看到small标签</p>
+<p>打开hexo\themes\modernist\source\css_partial\sidebar.styl文件，可以看到small标签</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 3
@@ -150,7 +164,7 @@ git clone https://github.com/heroicyang/hexo-th">
 
 <p>将第四行改为</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre><span class="keyword">color</span> <span class="preprocessor">#ccc</span>
+</pre></td><td class="code"><pre><span class="keyword">color</span> <span class="preprocessor">#fff</span>
 </pre></td></tr></table></figure>
 
 
@@ -184,6 +198,27 @@ git clone https://github.com/heroicyang/hexo-th">
 
 <p>效果还不错</p>
 <p><img src="http://vkki.qiniudn.com/2014/2/4/10.jpg" alt=""></p>
+<hr>
+<p>用同样的方法修改header部分
+<img src="http://vkki.qiniudn.com/2014/2/4/12.jpg" alt=""></p>
+<p>那行斜体字看着不顺眼，把它变正好了。</p>
+<p>打开hexo\themes\modernist\source\css_partial\header.styl，找到</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre>  <span class="tag">p</span>
+    <span class="attribute">margin</span> 0
+    <span class="attribute">color</span> <span class="id">#61778B</span>
+    <span class="attribute">width</span> 300px
+    <span class="attribute">font-size</span> 13px
+    <span class="attribute">font-style</span> <span class="value">italic</span>
+</pre></td></tr></table></figure>
+
+
+<p>删去最后一行。</p>
 
     
   </div>
@@ -271,11 +306,6 @@ git clone https://github.com/heroicyang/hexo-th">
   
   &copy; 2014 <a href="/">Vkki</a>
   
-</div>
-<div class="theme-copyright">
-  Theme by <a href="https://github.com/orderedlist" target="_blank">orderedlist</a>
-   | 
-  Redesign by <a href="http://heroicyang.com/" target="_blank">Heroic Yang</a>
 </div>
 <div class="clearfix"></div></footer>
   <script src="/js/scale.fix.js"></script>

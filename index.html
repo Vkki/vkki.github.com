@@ -83,108 +83,15 @@
 
 <p><img src="http://vkki.qiniudn.com/2014/2/4/1.jpg" alt="modernist主题" title="modernist主题"></p>
 <p>作为一名PSD，这样的主题自然是无法满足我的，下面我们就开始对其进行改造 ^_^</p>
-<p>第一个要换的就是背景，原生的暗色太过压抑，我想换成亮一点的。</p>
-<p>去<a href="http://www.zcool.com.cn" title="站酷" target="_blank">站酷</a>搜索“木纹”，找到很多木纹背景，看上去还不错~</p>
-<p><img src="http://vkki.qiniudn.com/2014/2/4/2.jpg" alt="木纹背景" title="木纹背景"></p>
-<p>这里我选的是notepad那个，下载下来，打开PSD看图层，发现有三个组</p>
-<p><img src="http://vkki.qiniudn.com/2014/2/4/3.jpg" alt=""></p>
-<p>删掉上面两个组，看看bg组，发现是由四幅图拼成的</p>
-<p><img src="http://vkki.qiniudn.com/2014/2/4/4.jpg" alt=""></p>
-<p>看来这四幅图是一样的，于是随便选取一副，删掉其他的，保存为bg.jpg格式。</p>
-<p>接着将这幅图片放到hexo\themes\modernist\source\css\images下</p>
-<p>下面就是找css了，想到背景这种东西一般是在body标签里设置，于是打开css_base文件夹下的layout.styl看看，哈哈，果然在这里</p>
-<p>找到</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre>body
-	padding 50px 0
-	margin 0
-	font 14px/1.5 font-title
-	color color-font
-	font-weight 300
-</pre></td></tr></table></figure>
-
-
-<p>在下面添加一行</p>
-<pre><code>background url(&quot;images/bg.jpg&quot;) top left;
-</code></pre><p>看看是否会出现对齐问题</p>
-<p><img src="http://vkki.qiniudn.com/2014/2/4/5.jpg" alt=""></p>
-<p>我晕，看来那四幅图是不一样的。。。</p>
-<p>仔细观察发现有两副是经过了旋转的，于是删去两幅不同的，仅保留两幅相同的后保存。</p>
-<p><img src="http://vkki.qiniudn.com/2014/2/4/11.jpg" alt=""></p>
-<p>其实只要保证了边界部分衔接正确，中间部分可以截掉以减小体积。</p>
-<p><img src="http://vkki.qiniudn.com/2014/2/4/6.jpg" alt=""></p>
-<p>这次比较不错。</p>
-<hr>
-<p>下面就是一些细节性的问题了。要把这里的小字改成白色，不然看不清楚。</p>
-<p><img src="http://vkki.qiniudn.com/2014/2/4/7.jpg" alt=""></p>
-<p>F12看一下，是一个叫small的标签。</p>
-<p><img src="http://vkki.qiniudn.com/2014/2/4/8.jpg" alt=""></p>
-<p>打开hexo\themes\modernist\source\css_partial\下的sidebar.styl文件，可以看到small标签</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-2
-3
-4
-5
-6
-7
-8
-</pre></td><td class="code"><pre>.tag
-	small
-		margin-left 15px
-		color #ccc
-		&amp;:before
-		  content '('
-		&amp;:after
-		  content ')'
-</pre></td></tr></table></figure>
-
-
-<p>将第四行改为</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre><span class="keyword">color</span> <span class="preprocessor">#ccc</span>
-</pre></td></tr></table></figure>
-
-
-<p>按同样的方法改掉footer.styl中#footer的color</p>
-<p><img src="http://vkki.qiniudn.com/2014/2/4/9.jpg" alt=""></p>
-<p>黑色的分割线有点违和，我们来改它的颜色。</p>
-<p>还是在sidebar.stly文件里，找到title。</p>
-<p>可以看到那行线实质上是标题的下边框，分别用一个border和一个shadow做成了立体效果。</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre><span class="class">.title</span>
-	<span class="attribute">padding</span> 4px 2px
-	<span class="attribute">font-size</span> 22px
-	<span class="attribute">font-weight</span> <span class="attribute">normal</span>
-	<span class="attribute">border-bottom</span> 1px <span class="value">solid</span> <span class="id">#000</span>
-	<span class="attribute">box-shadow</span> <span class="function">rgba(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">0.25</span>)</span> 0 1px 0
-</pre></td></tr></table></figure>
-
-
-<p>我们将border属性改成shi黄色，并增加shadow的不透明度以提高反差</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-2
-</pre></td><td class="code"><pre><span class="attribute">border-bottom</span> 1px <span class="value">solid</span> <span class="id">#a95f34</span>
-<span class="attribute">box-shadow</span> <span class="function">rgba(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">0.5</span>)</span> 0 1px 0
-</pre></td></tr></table></figure>
-
-
-<p>效果还不错</p>
-<p><img src="http://vkki.qiniudn.com/2014/2/4/10.jpg" alt=""></p>
 
     
   </div>
   <footer class="end-sep">
     
+      
+        <div class="alignleft">
+          <a href="/2014/02/04/beautify-your-hexo/#more" class="more-link">Read More</a>
+        </div>
       
       
     
@@ -225,13 +132,15 @@
     
       <p>经过多方比较最终选择了用Hexo搭建这个博客。</p>
 <p>本来想用Octopress的，后来觉得界面实在是太单调了，而且据传还有生成速度慢的缺点，就果断换成这个很有逼格的Hexo了。就是对Markdown还不太熟，回头找个文档好好研究一下。</p>
-<p>最近一段时间比较迷茫，对自己的前途非常的不确定，直到看到一位复旦大牛的经历才算是找到了方向。</p>
-<p>第一篇不想写太多，这篇就当测试，以后再慢慢写吧。</p>
 
     
   </div>
   <footer class="end-sep">
     
+      
+        <div class="alignleft">
+          <a href="/2014/02/03/hello-world/#more" class="more-link">Read More</a>
+        </div>
       
       
     
@@ -305,11 +214,6 @@
   
   &copy; 2014 <a href="/">Vkki</a>
   
-</div>
-<div class="theme-copyright">
-  Theme by <a href="https://github.com/orderedlist" target="_blank">orderedlist</a>
-   | 
-  Redesign by <a href="http://heroicyang.com/" target="_blank">Heroic Yang</a>
 </div>
 <div class="clearfix"></div></footer>
   <script src="/js/scale.fix.js"></script>
