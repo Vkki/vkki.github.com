@@ -284,21 +284,24 @@ font<span class="attribute">-title</span> <span class="subst">=</span> <span cla
 <p>用选取工具选取这样一块区域，注意边界只有左边和上边。</p>
 <p><img src="http://vkki.qiniudn.com/2014/2/4/16.jpg" alt=""></p>
 <p>反选后删除其余部分，裁切后保存为paper.png，保存至木纹那个目录下</p>
-<p>打开hexo\themes\modernist\source\css\_base\layout.styl</p>
+<p>打开hexo\themes\modernist\source\css\_partial\article.styl</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 3
 4
-</pre></td><td class="code"><pre><span class="built_in">.</span>content
-  background linear<span class="attribute">-gradient</span>(<span class="variable">#fafafa</span>, <span class="variable">#DEDEDE</span> <span class="number">700</span>px)
-  border<span class="attribute">-radius</span> <span class="number">0</span> <span class="number">0</span> <span class="number">8</span>px <span class="number">8</span>px
-  border<span class="attribute">-top</span> <span class="number">1</span>px solid <span class="variable">#fff</span>
+</pre></td><td class="code"><pre><span class="tag">article</span>
+  <span class="attribute">padding</span> 15px 30px
+  <span class="attribute">font-size</span> 15px
+  <span class="attribute">position</span> <span class="value">relative</span>
 </pre></td></tr></table></figure>
 
 
-<p>将第二行修改为</p>
+<p>在末尾添加</p>
 <pre><code>background url(images/paper.png)
-</code></pre>
+</code></pre><p>看效果</p>
+<p><img src="http://vkki.qiniudn.com/2014/2/4/17.jpg" alt=""></p>
+<hr>
+
     
   </div>
   <footer>
