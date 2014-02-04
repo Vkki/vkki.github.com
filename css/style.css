@@ -23,7 +23,6 @@ body {
   border-radius: 8px;
   -webkit-box-shadow: rgba(0,0,0,0.2) 0 0 0 1px, rgba(0,0,0,0.45) 0 3px 10px;
   box-shadow: rgba(0,0,0,0.2) 0 0 0 1px, rgba(0,0,0,0.45) 0 3px 10px;
-  z-index: 1;
 }
 header,
 section,
@@ -43,15 +42,9 @@ strong {
   font-weight: 700;
 }
 .content {
-  background: url("images/paper-top.png") repeat-x scroll left top;
+  background: url("images/paper.png");
   -webkit-border-radius: 0 0 8px 8px;
   border-radius: 0 0 8px 8px;
-  background-position-x: 0%;
-  background-position-y: 0%;
-  background-repeat-x: repeat;
-  background-repeat-y: no-repeat;
-  background-attachment: scroll;
-  z-index: 2;
 }
 .clearfix {
   zoom: 1;
@@ -115,7 +108,6 @@ article {
   padding: 15px 30px;
   font-size: 15px;
   position: relative;
-  background: url("images/paper.png");
 }
 article.page .icon {
   display: none;
