@@ -65,11 +65,10 @@ strong {
 #header {
   -webkit-border-radius: 8px 8px 0 0;
   border-radius: 8px 8px 0 0;
-  background: #c6eafa -webkit-linear-gradient(#ddfbfc, #c6eafa);
-  background: #c6eafa -moz-linear-gradient(#ddfbfc, #c6eafa);
-  background: #c6eafa -o-linear-gradient(#ddfbfc, #c6eafa);
-  background: #c6eafa -ms-linear-gradient(#ddfbfc, #c6eafa);
-  background: #c6eafa linear-gradient(#ddfbfc, #c6eafa);
+  background: url("images/header.jpg");
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
   position: relative;
   padding: 15px 30px;
   border-bottom: 1px solid #b2d2e1;
@@ -106,6 +105,9 @@ strong {
   color: #61778b;
   width: 300px;
   font: 13px "Microsoft Yahei";
+}
+#header a {
+  color: #eee;
 }
 article {
   padding: 15px 30px;
@@ -606,13 +608,14 @@ article footer .tags:before {
   width: 680px;
   margin: 20px auto 0;
   padding: 20px 0 0;
-  color: #fff;
+  color: #000;
   overflow: hidden;
   text-align: center;
+  text-shadow: 0px 1px 0px rgba(255,255,255,0.6);
+  font: 14px "PT Serif";
 }
 #footer a {
-  color: #fff;
-  font-style: italic;
+  color: #000;
 }
 @media screen and (max-width: 740px) {
   body {
