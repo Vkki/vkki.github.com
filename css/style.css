@@ -12,7 +12,7 @@ body {
   background: url("images/bg.jpg") top left;
   padding: 50px 0;
   margin: 0;
-  font: 14px/1.5 "Droid Serif", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font: 14px/1.5 "PT Serif", "Microsoft Yahei", "Droid Serif", Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #555;
   font-weight: 300;
 }
@@ -79,7 +79,7 @@ strong {
 }
 #header .nav {
   float: right;
-  font-family: "Droid Serif", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "PT Serif", "Microsoft Yahei", "Droid Serif", Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 2.5em;
 }
 #header .nav ul {
@@ -105,7 +105,7 @@ strong {
   margin: 0;
   color: #61778b;
   width: 300px;
-  font: 13px "Microsoft Yahei";
+  font-size: 13px;
 }
 #header a {
   color: #eee;
@@ -259,7 +259,7 @@ article header .icon:before {
   text-align: center;
 }
 article header time {
-  font: 0.9em "Droid Serif", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font: 0.9em "PT Serif", "Microsoft Yahei", "Droid Serif", Helvetica Neue, Helvetica, Arial, sans-serif;
   margin-bottom: 5px;
   display: block;
   line-height: 1;
@@ -478,7 +478,7 @@ article footer .tags:before {
 #pagination a {
   display: block;
   padding: 5px 10px;
-  font-family: "Droid Serif", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "PT Serif", "Microsoft Yahei", "Droid Serif", Helvetica Neue, Helvetica, Arial, sans-serif;
   background: #069;
   color: #fff;
   text-decoration: none;
@@ -613,7 +613,7 @@ article footer .tags:before {
   overflow: hidden;
   text-align: center;
   text-shadow: 0px 1px 0px rgba(255,255,255,0.6);
-  font: 14px "PT Serif";
+  font-size: 14px;
 }
 #footer a {
   color: #000;
