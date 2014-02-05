@@ -4,17 +4,13 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   
-  <title>使用神器mimikatz获取当前系统密码 | Vkki</title>
+  <title>程序员 | Vkki</title>
   <meta name="author" content="Vkki">
-  
-  <meta name="description" content="mimikatz，小名“咪咪卡住”，是来自法国的一款调试器，但是为什么称它为神器呢？因为作者写的一个dll可以帮助我们获取系统的登陆密码。目前测试从WinXP至Win7再从Win2003至Win2008全部有效。
-下载地址就不放了大家自行百度哈，对了貌似只有1.0版本支持这个功能，最新的2.0不支持。解压后有三个文件夹tools、Win32和x64。选择自己对应的系统进入，我这里是x64。
-下面我们来开始获取密码~！">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-  <meta property="og:title" content="使用神器mimikatz获取当前系统密码"/>
+  
   <meta property="og:site_name" content="Vkki"/>
 
   <link rel="alternate" href="/atom.xml" title="Vkki" type="application/atom+xml">
@@ -205,68 +201,80 @@
   <div class="clearfix"></div>
 </nav>
 <div class="clearfix"></div></header>
-    <div class="content"><article class="post">
+    <div class="content">
+<h2 class="archive-title category">程序员</h2>
+
+
+  
+    <article class="post">
   <header>
     
       <div class="icon"></div>
-      <time datetime="2014-02-05T11:57:55.000Z"><a href="/2014/02/05/mimikatz/">Feb 5 2014</a></time>
+      <time datetime="2014-02-05T15:51:25.000Z"><a href="/2014/02/05/140-google-interview-questions/">Feb 5 2014</a></time>
     
     
   
-    <h1 class="title">使用神器mimikatz获取当前系统密码</h1>
+    <h1 class="title"><a href="/2014/02/05/140-google-interview-questions/">140个Google面试题</a></h1>
   
 
   </header>
   
+    <div class="gallery">
+  <div class="photoset">
+    
+      
+        <img src="http://vkki.qiniudn.com/2014/2/5/5.jpg">
+      
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
   <div class="entry">
     
-      <p>mimikatz，小名“咪咪卡住”，是来自法国的一款调试器，但是为什么称它为神器呢？因为作者写的一个dll可以帮助我们获取系统的登陆密码。目前测试从WinXP至Win7再从Win2003至Win2008全部有效。</p>
-<p>下载地址就不放了大家自行百度哈，对了貌似只有1.0版本支持这个功能，最新的2.0不支持。解压后有三个文件夹tools、Win32和x64。选择自己对应的系统进入，我这里是x64。</p>
-<p>下面我们来开始获取密码~！</p>
-<a id="more"></a>
-
-<p>注：本机账户是Y，密码是Vkki9191。</p>
-<p><img src="http://vkki.qiniudn.com/2014/2/5/7.jpg" alt=""></p>
-<p>用管理员权限运行mimikatz.exe，输入以下代码提升权限</p>
-<pre><code>privilege::debug
-</code></pre><p><img src="http://vkki.qiniudn.com/2014/2/5/8.jpg" alt=""></p>
-<p>显示OK后接着输入（要保证sekurlsa.dll和mimikatz.exe在同一目录下）</p>
-<pre><code>inject::process lsass.exe sekurlsa.dll
-</code></pre><p><img src="http://vkki.qiniudn.com/2014/2/5/9.jpg" alt=""></p>
-<p>显示一大串字符，只要没出现Error字样就继续</p>
-<pre><code>@getLogonPasswords
-</code></pre><p><img src="http://vkki.qiniudn.com/2014/2/5/10.jpg" alt=""></p>
-<p>同样出来一大堆东西，根据Utilisateur principal找到当前账户，wdigest和tspkg后的就是这个账户的密码啦！</p>
-<p><img src="http://vkki.qiniudn.com/2014/2/5/6.jpg" alt=""></p>
-<p>快去跟小伙伴热(tu)情(mou)分(bu)享(gui)吧！</p>
+      <h2 id="-google-interview-questions-product-marketing-manager-"><strong>Google Interview Questions: Product Marketing Manager</strong></h2>
+<ul>
+<li><p>Why do you want to join Google?</p>
+</li>
+<li><p>What do you know about Google’s product and technology?</p>
+</li>
+<li><p>If you are Product Manager for Google’s Adwords, how do you plan to market this?</p>
+</li>
+<li><p>What would you say during an AdWords or AdSense product seminar?</p>
+</li>
+<li><p>Who are Google’s competitors, and how does Google compete with them?</p>
+</li>
+<li><p>Have you ever used Google’s products? Gmail?</p>
+</li>
+</ul>
 
     
   </div>
-  <footer>
+  <footer class="end-sep">
     
       
-  
-  <div class="categories">
-    <a href="/categories/系统/">系统</a>
-  </div>
-
+        <div class="alignleft">
+          <a href="/2014/02/05/140-google-interview-questions/#more" class="more-link">Read More</a>
+        </div>
       
-  
-  <div class="tags">
-    <a href="/tags/mimikatz/">mimikatz</a>
-  </div>
-
+      
     
     <div class="clearfix"></div>
   </footer>
 </article>
 
 
-<section id="comment">
-  <h1 class="title">Comments</h1>
-  <div class="ds-thread" data-title="使用神器mimikatz获取当前系统密码">
-  </div>
-</section>
+  
+
+  <nav id="pagination">
+  
+  
+  <div class="clearfix"></div>
+</nav>
+
 </div>
   </div>
   <div class="widget-wrapper">
