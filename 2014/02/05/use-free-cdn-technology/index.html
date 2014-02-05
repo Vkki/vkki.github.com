@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  
+  <title>使用免费CDN加速你的站点 | Vkki</title>
+  <meta name="author" content="Vkki">
+  
+  <meta name="description" content="相信 CDN 技术大家都不陌生了，陌生的话自动百度。。。
+由于价格等一些众所周知的原因，许多站长都选择了海外的服务器，这时从国内访问的速度就显得比较慢了。例如本站就是运行在Github上的，Github 服务器在美国，架设好后用我这儿的电信 20M 光纤打开都要4~5秒，很蛋疼。
+目前国内提供免费 CDN 的厂商有很多，例如大名鼎鼎的CCIH旗下的 Webluker、百度旗下的加速乐（就是前一阵声称接受比特币支付后来被央行打了一耳光的那个）、创新工场旗下的安全宝、360旗下的360网站卫士……">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <meta property="og:title" content="使用免费CDN加速你的站点"/>
+  <meta property="og:site_name" content="Vkki"/>
+
+  <link rel="alternate" href="/atom.xml" title="Vkki" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-47767270-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+
+<body>
+  <div class="wrapper">
+    <header id="header"><div class="title">
+  <h1><a href="/">Vkki</a></h1>
+  <p><a href="/">码农、旅行、摄影、电影、经济</a></p>
+</div>
+<nav class="nav">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+    <div class="content"><article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <time datetime="2014-02-05T09:52:44.000Z"><a href="/2014/02/05/use-free-cdn-technology/">Feb 5 2014</a></time>
+    
+    
+  
+    <h1 class="title">使用免费CDN加速你的站点</h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <p>相信 CDN 技术大家都不陌生了，陌生的话自动百度。。。</p>
+<p>由于<del>价格等</del>一些众所周知的原因，许多站长都选择了海外的服务器，这时从国内访问的速度就显得比较慢了。例如本站就是运行在Github上的，Github 服务器在美国，架设好后用我这儿的电信 20M 光纤打开都要4~5秒，很蛋疼。</p>
+<p>目前国内提供免费 CDN 的厂商有很多，例如大名鼎鼎的CCIH旗下的 <a href="http://www.webluker.com/" title="Webluker" target="_blank">Webluker</a>、百度旗下的<a href="http://jiasule.baidu.com/" title="加速乐" target="_blank">加速乐</a>（就是前一阵声称接受比特币支付后来被央行打了一耳光的那个）、创新工场旗下的<a href="http://www.anquanbao.com/" title="安全宝" target="_blank">安全宝</a>、360旗下的<a href="http://wangzhan.360.cn/" title="360网站卫士" target="_blank">360网站卫士</a>……</p>
+<a id="more"></a>
+
+<p>面对花样繁多的品牌我们应该选哪一个呢？很明显百度无误【误</p>
+<p>虽然经过<a href="http://www.cnbeta.com/articles/226301.htm" title="“Webluker、VeryCloud云分发、加速乐、安全宝”CDN加速对比评测" target="_blank">测试</a>加速乐的速度并不是最快的，但作为全国最大的搜索引擎，相信大家<a href="http://www.chinaz.com/web/2013/1011/321569.shtml" title="百度加速乐、360网站卫士、安全宝的SEO友好度评测" target="_blank">都懂的</a>……</p>
+<p>综合来讲，国内的域名推荐用VeryCloud，国外的推荐用加速乐，区别大家懂的哈。</p>
+<p>其实加速乐也有很多优点啦，例如无需beian、支持特定线路回源等等，为了帮助大家更直观地理解加速乐的效果，我们用360的<a href="http://ce.cloud.360.cn/index" title="奇云测" target="_blank">奇云测</a>分别测试一下加速前和加速后的效果，点击可看大图：</p>
+<p>加速前：</p>
+<p><img src="http://vkki.qiniudn.com/2014/2/5/1.jpg" alt=""></p>
+<p>加速后：</p>
+<p><img src="http://vkki.qiniudn.com/2014/2/5/2.jpg" alt=""></p>
+<p>怎么样，效果还不错吧，下面我们就来一起看看怎么进行设置吧。</p>
+<p>首先注册加速乐，可以用百度账号登陆，然后按照网站提示一步步输入域名、设置别名即可。</p>
+<p>这里主要说一下NS方式和CNAME方式的区别。两种方式都支持根据线路分配IP，例如服务器是电信的，就可以指定对网通的用户采取CDN加速而对电信的用户直接访问源服务器（回源）。</p>
+<p><img src="http://vkki.qiniudn.com/2014/2/5/3.jpg" alt=""></p>
+<hr>
+<h1 id="ns-">NS方式</h1>
+<p>NS方式是指直接使用加速乐的DNS作为域名解析服务器，优点是可以直接加速一级域名，并且有百度的防DDOS系统作为保护。</p>
+<p>缺点是生效时间较长。</p>
+<hr>
+<h1 id="cname-">CNAME方式</h1>
+<p>这里顺便说一下 A 记录和 CNAME 的区别</p>
+<blockquote>
+<p>A记录：地址记录，用来指定域名的IPv4地址（如：8.8.8.8），如果需要将域名指向一个IP地址，就需要添加A记录。</p>
+<p>CNAME： 如果需要将域名指向另一个域名，再由另一个域名提供ip地址，就需要添加CNAME记录。</p>
+</blockquote>
+<p><strong>简单来说，A记录就是 IP 地址指向，CNAME 就是域名指向。</strong></p>
+<p>例如这里我选择CNAME方式使用加速乐，我的域名是Vkki.me，我的服务器IP是 1.1.1.1。</p>
+<p>那么DNS那里就应该填：</p>
+<p>A记录：1.1.1.1</p>
+<p>www的CNAME：212b744f37249773.cdn.jiashule.com. </p>
+<p>这个 CNAME 的值就是由加速乐提供的，通过这个域名就能查询到加速乐的CDN节点，比如说是2.2.2.2。</p>
+<ul>
+<li><p>当我访问Vkki.me时，由于这是一个A记录，就会访问1.1.1.1，也就是原始服务器。</p>
+</li>
+<li><p>当我访问www.vkki.me时，DNS会把这个别名转到212b744f37249773.cdn.jiashule.com，这个域名属于加速乐，这时加速乐会根据你的IP确定一个离你比较近的CDN节点，也就是2.2.2.2，这就是CNAME方式的原理。</p>
+</li>
+</ul>
+<p>缺点是<strong>不一定</strong>支持顶级域名的加速（取决于域名提供商）。</p>
+<hr>
+<p>综合来看，网站受众在国内的使用NS方式比较好，受众在国外的使用CNAME比较好。</p>
+<p>由于 Github 的 CNAME 必须要填一个二级域名才能正常解析自定义域名，而加速乐 CNAME 方式只能支持 IP 地址，所以我们在这里选择NS方式。</p>
+<p>在域名提供商处将 NS 改为 ns1.jiasule.com 和 ns2.jiasule.com 后，分别设置A记录和CNAME。由于Github服务器在美国，而美国的服务器除了天朝访问都很快（不要问为什么！），所以我们可以设置两个线路，默认的选择云端模式，海外选择回源模式，这样在国内国外都能达到理想的访问速度。</p>
+<p><img src="http://vkki.qiniudn.com/2014/2/5/4.jpg" alt=""></p>
+<p>到这里就设置完成了，耐心等待生效吧~</p>
+
+    
+  </div>
+  <footer>
+    
+      
+  
+  <div class="categories">
+    <a href="/categories/域名/">域名</a>
+  </div>
+
+      
+  
+  <div class="tags">
+    <a href="/tags/CDN/">CDN</a>
+  </div>
+
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">Comments</h1>
+  <div class="ds-thread" data-title="使用免费CDN加速你的站点">
+  </div>
+</section>
+</div>
+  </div>
+  <div class="widget-wrapper">
+    <aside id="sidebar">
+  
+  
+    
+      
+      
+
+<div class="widget tag first">
+  <h3 class="title">Categories</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/前端/">前端</a><small>1</small></li>
+  
+    <li><a href="/categories/域名/">域名</a><small>1</small></li>
+  
+    <li><a href="/categories/扯淡/">扯淡</a><small>1</small></li>
+  
+    <li><a href="/categories/系统/">系统</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+    
+      
+      
+
+<div class="widget tag">
+  <h3 class="title">Tags</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/CDN/">CDN</a><small>1</small></li>
+  
+    <li><a href="/tags/mimikatz/">mimikatz</a><small>1</small></li>
+  
+    <li><a href="/tags/开始/">开始</a><small>1</small></li>
+  
+    <li><a href="/tags/美化/">美化</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+    
+      
+      
+
+<div class="widget tagcloud">
+  <h3 class="title">Tag Cloud</h3>
+  <div class="entry">
+    <a href="/tags/CDN/" style="font-size: NaNpx;">CDN</a><a href="/tags/mimikatz/" style="font-size: NaNpx;">mimikatz</a><a href="/tags/开始/" style="font-size: NaNpx;">开始</a><a href="/tags/美化/" style="font-size: NaNpx;">美化</a>
+  </div>
+</div>
+
+    
+      
+      
+    
+  
+</aside>
+<div class="clearfix"></div>
+  </div>
+  <footer id="footer"><div class="copyright">
+  
+  &copy; 2014 <a href="/">Vkki</a>
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="/js/scale.fix.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+<script type="text/javascript">
+  var duoshuoQuery = { short_name: 'vkki' };
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';
+    ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox();
+  })(jQuery);
+</script>
+
+</body>
+</html>
