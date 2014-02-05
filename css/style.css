@@ -494,7 +494,8 @@ article footer .tags:before {
 .archive-title {
   font-weight: normal;
   margin-bottom: 10px;
-  padding: 0 30px;
+  margin-top: 0;
+  padding: 10px 30px 0 10px;
   text-shadow: 0 0 1px #fff;
 }
 .archive-title:before {
